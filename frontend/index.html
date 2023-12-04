@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill the form!</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .sep{
+            border: 1px solid black;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank you for attending please fill this survey form!</h1>
+    <div class="sep">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div class="sep">
+        <label for="date">date de naissance: </label>
+        <input type="date" name="date" id="date">
+    </div>
+    <div class="sep">
+        <label for="commentaire">commentaire: </label>
+        <input type="text" name="commentaire" id="commentaire">
+    </div>
+    <div class="sep">
+        <label for="niveau">Niveau d'étude : </label>
+        <select name="niveau" id="niveau"> 
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+        </select>
+    </div>
+    <div class="sep">
+        <button type="button" id="sub">submit</button>
+        <button type="reset">reset</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
